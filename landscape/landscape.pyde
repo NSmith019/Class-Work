@@ -1,5 +1,6 @@
 x = -80
 y = 320
+y_speed = -2
 def setup():
     size(640,480)
     
@@ -31,8 +32,11 @@ def draw():
     rect(140, 280, 20, 30)
     fill(190)
     global y
+    global y_speed
     if y == 150:
-        for i in range(85):
-            y += 2
-    y -= 2
+        y_speed = 2
+    elif y > 320:
+        y_speed = -2
+    y += y_speed
     rect(316, y, 8, 16)
+    
