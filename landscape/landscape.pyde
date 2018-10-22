@@ -9,9 +9,9 @@ def draw():
     if x > 720:
         x = -80
     x += 1
-    background(135, 206, 235)
+    background(100, 200, 255)
     noStroke()
-    fill(255, 255, 0)
+    fill(255, 224, 64)
     ellipse(x, 60, 80, 80)
     fill(50, 255, 0)
     rect(0, 340, 775, 150)
@@ -21,7 +21,7 @@ def draw():
     rect(100, 150, 70, 200)
     triangle(300, 350, 340, 350, 320, 75)
     ellipse(320, 145, 75, 40)
-    fill(171, 206, 219)
+    fill(135, 206, 250)
     rect(110, 160, 20, 30)
     rect(110, 200, 20, 30)
     rect(110, 240, 20, 30)
@@ -39,4 +39,3 @@ def draw():
         y_speed = -2
     y += y_speed
     rect(316, y, 8, 16)
-    
