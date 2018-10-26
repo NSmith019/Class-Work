@@ -4,7 +4,7 @@ def setup():
     img = loadImage("haunted-house-md.png")
 
 def draw():
-    background(255, 165, 46)
+    background(102, 51, 153)
     noStroke()
     fill(255)
     ellipse(680, 468, 700, 700)
